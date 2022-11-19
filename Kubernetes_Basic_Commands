@@ -26,3 +26,6 @@ To run this pod
        
 To check whether pod is running
  $ kubectl get pods
+
+To delete any pod created 
+$ kubectl delete pod pod_name
