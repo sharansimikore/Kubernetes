@@ -5,7 +5,7 @@ To use the K'8s platform intially without installing K'8s we will use Katacoda p
 
 Utility of K'8s is kubectl.
 
-To write any files in Kubernetes it ia callled as manifest file and always manifest file should end with xxx.yaml
+To write any files in Kubernetes it is callled as manifest file and always manifest file should end with xxx.yaml
 
 
 Note: These pods are executed on the https://learning.oreilly.com/scenarios/kubernetes-sandbox/9781492062820/
