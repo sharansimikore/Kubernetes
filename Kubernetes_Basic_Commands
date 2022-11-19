@@ -63,3 +63,9 @@ $ kubectl get pods -n namespace
 
 To delete the pod with specific namespace
 $ kubectl delete pod -n namespace
+
+To get all the pods
+$ kubectl get all
+
+
+
