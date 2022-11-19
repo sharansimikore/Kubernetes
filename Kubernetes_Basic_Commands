@@ -3,4 +3,24 @@ To get started with K'8s, first simple example is to create a Pod. Pods are smal
 
 To use the K'8s platform intially without installing K'8s we will use Katacoda platform.
 
-Componet of K'8s is kubectl
+Componet of K'8s is kubectl.
+
+mypod.yaml
+---------------------------
+apiVersion: v1
+kind: Pod
+metadata:
+ name: nginx-pod
+
+spec:
+    containers:
+     - name: nginx
+       image: nginx
+       
+ --------------------------------
+       
+       To run this pod
+       $ kubectl apply -f mypod.yaml
+       
+       To check whether pod is running
+       $ kubectl get pods
