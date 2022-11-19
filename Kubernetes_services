@@ -14,4 +14,13 @@ manifest file or yaml file
 Declarative type : yaml file 
 Imperative type  : commands to execute
 
+-------------------------------------------------------------
+Note that Service selector key value [app: sharan in service.yaml file] and pod label key value [app: sharan in deployment.yaml file] is same.
+so endpoint gets an IP address so it means service is being exposed to outside worls
 
+kubectl get pods --show-labes
+----------------------------------------------------
+
+To get all the services
+$ kubectl get services/ svc
+$ kubectl describe svs svc_name
