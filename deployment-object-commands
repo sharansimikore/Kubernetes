@@ -14,3 +14,8 @@ $ kubectl scale deploy/deployment deployment_name --replicas=5   [deployment nam
 To scalet down the pods:
 $ kubectl scale deploy nginx-deployment --replicas=1
 
+To get the labels of the pod
+$ kubectl get pods --show-labels
+
+To get the specific pod with labe app=nginx
+$kubectl get pods -l app=nginx
