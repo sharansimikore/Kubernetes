@@ -35,3 +35,31 @@ $ kubectl delete pod pod_name
 
 To check more information about the pod
 $ kubectl describe pod pod_name
+
+To check on which node pod is created
+$ kubectl get -o wide
+
+To delete a Pod
+$ kubectl delete pod pod_name
+
+NAMESPACE
+--------------------------------
+
+To create a namespace
+$ kubectl create ns namespace
+
+To see how many namespaces present in kubernetes
+$ kubectl get ns  or kubectl get namespaces
+
+To create a pod with ns
+$ kubectl apply -f pod_name -n namespace
+ eg: kubectl apply -f mypod -n sharan
+
+To check the namespace
+$ kubectl get ns
+
+To check the pod with spacific namespace
+$ kubectl get pods -n namespace
+
+To delete the pod with specific namespace
+$ kubectl delete pod -n namespace
