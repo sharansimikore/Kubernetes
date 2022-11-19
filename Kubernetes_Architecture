@@ -4,8 +4,8 @@ Kubernetes Architecture:
 Master and Worker node
 
 Componets of Master:
-1. api server
-2. Scheduler
+1. api Server
+2. Scheduler 
 3. Controller
 4. etcd
 
