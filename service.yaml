@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+luspec:
+  selector:
+    app: sharan
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
