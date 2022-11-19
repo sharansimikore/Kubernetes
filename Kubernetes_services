@@ -14,3 +14,5 @@ Whenever kind of type Deployment it is like a object Deployment
 
 Wheneber kind of type Pod it is like a object Pod
 
+If you create a pod for the deployment.yaml, even after deleting the pod another pod gets created as replicas is used 
+
