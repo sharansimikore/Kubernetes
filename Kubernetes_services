@@ -1,0 +1,11 @@
+In Kuberenetes pods can be created by they not exposed by default, to get expose we need to use a concept called Services.
+
+To expose all the created pods to outside world, services are used
+
+Types of services
+----------------------------
+1. ClusterIP    -  If I want to expose the pod internally within the cluster
+2. NodePort     -  If I want to expose the pod to outside world --port forwarding
+3. LoadBalancer -  This service can be used with the cloud providers only, this can be used to expose to the outside world.
+4. Headless
+
