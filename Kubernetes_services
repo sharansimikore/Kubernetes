@@ -20,7 +20,7 @@ To check hopw many replicas:
 $ kubectl get replicaset
 
 To scalet or increase pods:
-$ kubectl scale deploy/deployment pod_name --replicas=5
+$ kubectl scale deploy/deployment deployment_name --replicas=5   [deployment name is in the deployment.yaml file]
    eg: kubectl scale deploy nginx-deployment --replicas=5
    
 To scalet down the pods:
