@@ -3,7 +3,7 @@ To get started with K'8s, first simple example is to create a Pod. Pods are smal
 
 To use the K'8s platform intially without installing K'8s we will use Katacoda platform.
 
-Componet/utility of K'8s is kubectl.
+Utility of K'8s is kubectl.
 
 To write any files in Kubernetes it ia callled as manifest file and always manifest file should end with xxx.yaml
 
