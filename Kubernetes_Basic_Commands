@@ -7,6 +7,9 @@ Componet/utility of K'8s is kubectl.
 
 To write any files in Kubernetes it ia callled as manifest file and always manifest file should end with xxx.yaml
 
+
+Note: These pods are executed on the https://learning.oreilly.com/scenarios/kubernetes-sandbox/9781492062820/
+
 mypod.yaml
 ---------------------------
 apiVersion: v1
