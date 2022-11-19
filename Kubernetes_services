@@ -9,3 +9,8 @@ Types of services
 3. LoadBalancer -  This service can be used with the cloud providers only, this can be used to expose to the outside world.
 4. Headless
 
+
+Whenever kind of type Deployment it is like a object Deployment
+
+Wheneber kind of type Pod it is like a object Pod
+
