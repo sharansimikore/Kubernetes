@@ -16,3 +16,13 @@ Wheneber kind of type Pod it is like a object Pod
 
 If you create a pod for the deployment.yaml, even after deleting the pod another pod gets created as replicas is used 
 
+To check hopw many replicas:
+$ kubectl get replicaset
+
+To scalet or increase pods:
+$ kubectl scale deploy/deployment pod_name --replicas=5
+   eg: kubectl scale deploy nginx-deployment --replicas=5
+   
+To scalet down the pods:
+$ kubectl scale deploy nginx-deployment --replicas=1
+
