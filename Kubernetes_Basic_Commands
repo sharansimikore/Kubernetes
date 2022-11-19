@@ -6,6 +6,7 @@ To use the K'8s platform intially without installing K'8s we will use Katacoda p
 Componet/utility of K'8s is kubectl.
 
 To write any files in Kubernetes it ia callled as manifest file and always manifest file should end with xxx.yaml
+
 mypod.yaml
 ---------------------------
 apiVersion: v1
@@ -20,8 +21,8 @@ spec:
        
  --------------------------------
        
-       To run this pod
-       $ kubectl apply -f mypod.yaml
+To run this pod
+ $ kubectl apply -f mypod.yaml
        
-       To check whether pod is running
-       $ kubectl get pods
+To check whether pod is running
+ $ kubectl get pods
