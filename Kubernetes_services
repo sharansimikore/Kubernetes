@@ -4,9 +4,14 @@ To expose all the created pods to outside world, services are used
 
 Types of services
 ----------------------------
-1. ClusterIP    -  If I want to expose the pod internally within the cluster
-2. NodePort     -  If I want to expose the pod to outside world --port forwarding
+1. ClusterIP    -  This is default service in Kubernetes. ClusterIP service will expose the pod within the k8's cluster
+2. NodePort     -  This service will expose the pod to outside world --port forwarding
 3. LoadBalancer -  This service can be used with the cloud providers only, this can be used to expose to the outside world.
 4. Headless
+
+manifest file or yaml file
+-----------------------------------------
+Declarative type : yaml file 
+Imperative type  : commands to execute
 
 
