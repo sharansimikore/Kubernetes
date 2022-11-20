@@ -23,4 +23,6 @@ kubectl get pods --show-labes
 
 To get all the services
 $ kubectl get services/ svc
+
+To check more infor about service
 $ kubectl describe svs svc_name
