@@ -13,3 +13,14 @@ Agents of worker node
 1. kubelet
 2. kube-proxy
 3. COntainer run time [ Docker ]
+
+* Whenever we hit request to create a pod using $ kubectl apply -f pod pod_name, then request first goes to the apiserver.
+Apiserver will ask the Scheduler to schedule the pod, then scheduler will check all the worker nodes whichever worker node is free 
+then scheduler will place place the node at thet worker node. Then componet of worker node kubelet will come into action and inform 
+the container run time (component of worker node) to pull the image and run as container.
+After that kubelet will inform the apiserver that pod is created.
+
+* In this whole session. etcd will capture or logs all the steps during this process.
+
+* Controller is basically responsible to maintain the pods for eg if my kind is of type deployment and replicas are 3 
+then even if delete one pod,then controller will bring another pod so that count of pods is 3. 
