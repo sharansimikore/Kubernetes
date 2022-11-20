@@ -1,0 +1,31 @@
+* Take the deployment.yaml file from kubernetes documentaion
+* Take the services.yaml file from kubernetes documention
+
+match both the service selector key: value and label key:value of pods(deployment)
+---------------------------------------------------------------------------------------------
+
+* Create a pods from deployment.yaml file
+* Create a services from service.yaml file
+---------------------------------------------------------------------------------------------
+This is ClusterIP: exposing ports within the cluster
+
+Check pods created
+$ kubectl get pods
+
+Check services created
+$ kubectl get services
+
+Check the IP of pods
+$ kubectl get pods -o wide
+
+Check the endpoint of services
+$ kubectl describe svs service_name
+
+To check endpoints
+$ kubectl get ep/ endpoints
+
+To connect to IP
+$ curl endpoint_IP
+
+
+
