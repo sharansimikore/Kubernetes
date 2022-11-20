@@ -1,8 +1,9 @@
 
 Kubernetes Architecture:
+------------------------------------------------------------------------------------------------------------------------------------
 
 Master and Worker node
-
+------------------------------------------------------------------------------------------------------------------------------------
 Componets of Master:
 1. api Server
 2. Scheduler 
@@ -12,7 +13,8 @@ Componets of Master:
 Agents of worker node
 1. kubelet
 2. kube-proxy
-3. COntainer run time [ Docker ]
+3. Container run time [ Docker ]
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 * Whenever we hit request to create a pod using $ kubectl apply -f pod pod_name, then request first goes to the apiserver.
 Apiserver will ask the Scheduler to schedule the pod, then scheduler will check all the worker nodes whichever worker node is free 
