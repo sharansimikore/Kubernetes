@@ -1,0 +1,23 @@
+#Install eksctl on Linux
+
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+
+#Move the extracted binary to /usr/local/bin. 
+
+sudo mv /tmp/eksctl /usr/local/bin
+
+eksctl version
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Install Kubectl
+
+sudo curl --silent --location -o /usr/local/bin/kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.22.6/2022-03-09/bin/linux/amd64/kubectl
+
+sudo chmod +x /usr/local/bin/kubectl
+
+kubectl version --short --client
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Create EKS cluster using eksctl command
+
+eksctl create cluster --name demo-eks --region us-east-2 --nodegroup-name my-nodes --node-type t3.small --managed --nodes 2 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
